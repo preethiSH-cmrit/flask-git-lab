@@ -1,6 +1,6 @@
 from flask import Flask
 
-app = Flask(**name**)
+app = Flask(__name__)
 
 @app.route("/")
 def home():
@@ -10,5 +10,9 @@ def home():
 def search():
   return "search"
 
-if **name** == "**main**":
-app.run(debug=True)
+@app.route("/booking")
+def booking():
+  return booking
+
+if __name__ == "__main__ ":
+  app.run(debug=True)
