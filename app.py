@@ -12,7 +12,7 @@ def search():
 
 @app.route("/booking")
 def booking():
-  return booking
+  return render_template ("booking.html")
 
 if __name__ == "__main__ ":
   app.run(debug=True)
