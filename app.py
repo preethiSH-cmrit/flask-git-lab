@@ -10,7 +10,7 @@ def home():
 def search():
   return "search"
 
-@app.route("/booking")
+@app.route("/booking02")
 def booking():
   return render_template ("booking.html")
 
